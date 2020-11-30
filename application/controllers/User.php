@@ -38,7 +38,7 @@ class User extends CI_controller{
         $data['user'] = $user;
 
         $this->form_validation->set_rules('name','Name','required');
-        $this->form_validation->set_rules('address','address','required');
+        $this->form_validation->set_rules('address','Address','required');
 
         if($this->form_validation->run() == false) {
             $this->load->view('edit',$data);
